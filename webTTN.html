@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+	<title>TNT</title>
+	<head>
+		<script
+		src="jquery/jquery-3.2.1.min.js">
+		</script>
+		<link rel="stylesheet" type="text/css" href="css.css">	
+		<script>
+		$("document").ready(function(){
+			$("tr:odd").css("background-color","white");
+			
+			$(".abc").focus(function(){
+				$(this).css("background","yellow");
+			});
+			
+			$(".abc").blur(function(){
+				$(this).css("background","white");
+			});
+			
+			$("table").click(function(){
+				$(this).fadeToggle(1000);
+			});
+		});
+		</script>
+		
+		<script type="text/javascript" >
+				function changecolor(chose){
+					var txt=document.getElementById("diem");
+					if(chose==1){
+						txt.style.border="solid 4px red";
+					}
+					
+					
+				}
+		</script>
+	</head>
+	<body>
+	</body>
+	
+	<input type="button" value="click vao day" id="test" onclick="changecolor(1)"></input>
+	
+	<button id="diem">Che dòng dầu</button>
+	<br>
+	<h2> Bảng đánh giá sơ bộ học sinh </h2>
+	
+		<table border="1" style="background-color:#1102">
+			<tr id="diem">
+				<td></td>
+				<td>điểm toán</td>
+				<td>điểm văn</td>
+				<td>điểm trung bình</td>
+			</tr>
+			<tr>
+				<td> Phạm Văn Tân</td>
+				<td> 5đ </td>
+				<td> 7đ </td>
+				<td> 6đ </td>
+			</tr>
+			<tr>
+				<td> Tạ Thanh Danh</td>
+				<td> 8đ </td>
+				<td> 4đ </td>
+				<td> 6đ </td>
+			</tr>
+			<tr>
+				<td> Nguyễn Tinh Anh</td>
+				<td> 5đ </td>
+				<td> 9đ </td>
+				<td> 7đ </td>
+			</tr>
+		</table>
+		<h3 style="color:red"> Form</h3>
+		Họ và Tên: <input type="text" class="abc"> <br> <br>
+		Ngày Sinh: <input type="text" class="abc"> <br> <br>
+		Quê quán: <input type="text" class="abc"> <br> <br>
+		<button class="butt" style="color: blue"> Submit </button>
+	</body>
+</html>
