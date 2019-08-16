@@ -1,0 +1,225 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <title>demo</title>
+  <!-- 	icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- -->
+</head>
+ 
+<body>
+	<!-- Navigation -->
+    <nav id="menu">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#theband">BAND</a></li>
+        <li><a href="#tour">TOUR</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li>
+          <a id="more">MORE</a>
+			<ul>
+				<li><a>Merchandise</a></li>
+				<li><a>Extras</a></li>
+				<li><a>Media</a></li>
+			</ul> 
+        </li>
+		
+		<li> <!-- icon-Search -->
+			<div class="icon">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</div>
+		</li>
+		
+      </ul>
+
+    </nav>
+	
+	<!-- auto slide image -->
+	
+	
+	<script>
+	  var i = 0;
+	  var images = [];
+	  var time = 3000;
+
+	  // Image list
+	  images[0] = 'chicago.jpg';
+	  images[1] = 'la.jpg';
+	  images[2] = 'ny.jpg';
+
+	  // Change image
+	  function changeImage(){
+
+		document.slide.src = images[i];
+
+		if(i <images.length - 1){
+		  i++;
+		} else {
+		  i = 0;
+		}
+		setTimeout("changeImage()", time);
+	  }
+
+	  window.onload = changeImage;
+	</script>
+	<img name="slide" width="100%">
+	<!--the Band-->
+	<div class="theband" id="theband">
+		<p class="p"><h1>THE BAND</h1></p>
+		<p class="p" style="margin-left:350px"><i>We love music</i></p>
+		<p>We have created a fictional band website.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+		laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+		irure dolor in reprehenderit in voluptate velit esse cillum 
+		dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+		non proident, sunt in culpa qui officia deserunt mollit anim id est 
+		laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+		ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+		exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br><br>
+		
+		<div class="container">
+			<div class="member">
+				<div class="name">
+					<a>Name</a>
+				</div>
+				<div class="img">
+					<img class="band" src="band.jpg" style="width:65%">		
+				</div>
+			</div>
+			
+			<div class="member">
+				<div class="name">
+					<a>Name</a>
+				</div>
+				<div class="img">
+					<img class="band" src="band.jpg" style="width:65%">		
+				</div>
+			</div>
+			
+			<div class="member">
+				<div class="name">
+					<a>Name</a>
+				</div>
+				<div class="img">
+					<img class="band" src="band.jpg" style="width:65%">		
+				</div>
+			</div>
+			
+		</div>
+	</div>	
+	<!-- TOUR -->
+	<div class="tour" id="tour">
+		<div class="title">
+			<p>TOUR DATES</p>
+			<p><i><h4>Remember to book your tickets!</h4></i></p>
+		</div>
+		<div class="table">
+			<a class="month">September</a> <a class="item">Sold out</a><br><hr>
+			<a class="month">October</a> <a class="item">Sold out</a><br><hr>
+			<a class="month">November</a> <a class="number">3</a>
+			<br><br>
+			
+			
+			<div class="place">
+				<img href="#" src="newyork.jpg" style="width:100%">
+				<br><br>
+				<div type="text" class="span">
+					<span>NewYork<span><br><br>
+					<span>Fri 27 Nov 2016</span><br><br>
+					<span>Praesent tincidunt sed tellus ut </span>
+					<span>rutrum sed vitae justo.</span>
+					<button style="text"><span>Buy Tickets</span></button>
+				</div>
+			</div>
+			<div class="khung">
+				<div class="place">
+					<img href="#" src="paris.jpg" style="width:100%">
+					<br><br>
+					<div type="text" class="span">
+						<span>NewYork<span><br><br>
+						<span>Fri 27 Nov 2016</span><br><br>
+						<span>Praesent tincidunt sed tellus ut </span>
+						<span>rutrum sed vitae justo.</span>
+						<button style="text"><span>Buy Tickets</span></button>
+					</div>
+				</div>
+				
+				<div class="place">
+					<img href="#" src="sanfran.jpg" style="width:100%">
+					<br><br>
+					<div type="text" class="span">
+						<span>NewYork<span><br><br>
+						<span>Fri 27 Nov 2016</span><br><br>
+						<span>Praesent tincidunt sed tellus ut </span>
+						<span>rutrum sed vitae justo.</span>
+						<button style="text"><span>Buy Tickets</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<div class="contact" id="contact">
+		<p><h1>CONTACT</h1></p>
+		<p><i>Fan? Drop a note!</i></p><br><br>
+		
+		<div>
+			<div class="icon-contact">
+				<a class="fa fa-map-marker" style="font-size:24px"></a>
+				<a>Chicago, US</a>
+			</div>
+			
+		
+			<div class="icon-contact">
+				<i class="material-icons" style="font-size:150%">&#xe0cd;</i>
+				<a>Phone: +00 151515</a>
+			</div>
+		
+			<div class="icon-contact">
+				<a class="fa fa-envelope" style="font-size:24px"></a>
+				<a>Chicago, US</a>
+			</div>
+			
+		</div>
+		
+		<form action="/action_page.php" class="input" target="_blank">
+			<div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+				<div class="w3-half">
+					<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">							
+				</div>
+				<div class="w3-half">
+					<input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">							
+				</div>
+			</div>
+			
+			<input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"><br>
+			<button class="w3-button w3-black w3-section w3-right" type="submid">SEND</button>
+		</form>
+		
+		
+		
+	</div>
+	
+	<div class="map-image">
+		<img src="map.jpg" style="width:100%">
+	</div>
+	
+	<div class="footer">
+		<a href="#" class="fa fa-facebook-official" style="color:grey"></a>
+		<a href="#" class="fa fa-instagram" style="color:grey"></a>
+		<a href="#" class="fa fa-snapchat" style="color:grey"></a>
+		<a href="#" class="fa fa-pinterest-p" style="color:grey"></a>
+		<a href="#" class="fa fa-twitter" style="color:grey"></a>
+		<a href="#" class="fa fa-linkedin" style="color:grey"></a>
+		
+		<p> Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+	</div>
+	
+	
+	
+</body>
+</html>

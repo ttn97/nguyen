@@ -1,0 +1,283 @@
+body{
+	
+	margin: 0px;
+	padding: 0px;
+}
+
+#menu{
+  padding: 0px;
+  width: 100%;
+  height: 55px;
+  background-color: black;
+  color: white;
+  position: fixed;
+}
+
+#menu ul li{
+  list-style:none inside;
+  width: auto;
+  float: left;
+  line-height: 35px; /*Cho text canh giữa menu*/
+  color: #fff;
+  padding: 0;
+  margin-right:10px;
+  position: relative;
+}
+
+#menu ul li a{
+  text-transform: uppercase;
+  white-space: nowrap; /*Cho chữ trong menu không bị wrap*/
+  padding: 0 10px;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#menu ul li ul {
+  position: absolute;
+  width: auto;
+  display: none;
+  background-color: #252525;
+  border-bottom: 3px solid #0082bb;
+  padding-left: 5px;
+}
+
+#menu ul li a:hover {
+  color: black;
+  background-color: yellow;
+}
+
+#menu ul li:hover ul{
+  /*Display ra submenu*/
+  display: block;
+}
+
+.slide img{
+	width: 100%;
+	position: relative;
+	
+}
+
+
+/* Style the submit button */
+nav ul li button {
+  width: 10%;
+  margin-left: 745px;
+  padding: 10px;
+  background: black;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+nav ul li button:hover {
+  background: red;
+}
+
+/* Clear floats */
+nav ul li button:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h4{
+	color: white;
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+}
+ 
+.theband{
+	width: 60%;
+	padding-left: 270px;
+}
+
+.p{
+	margin-left: 330px;
+}
+
+.name {
+	padding: 25px;
+}
+
+
+.name a{
+	margin-left: 40px;	
+}
+
+.member img{
+	border-radius: 4px;
+	
+}
+
+.member{
+	float: left;
+	padding-left: 10px;
+}
+
+.container{
+	padding-bottom: 50px;
+	
+}
+
+.tour{
+	width: 100%;
+	height: 800px;
+	background-color: black;
+	margin-top: 200px; 
+}
+
+.title{
+	padding-top: 50px;
+	
+}
+.title p{
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+
+.table{
+	width: 60%;
+	height: 100px;
+	background-color: white;
+	margin-left: 220px;	
+	padding-top: 10px;
+}
+
+.table a{
+	width: 60%;
+	background-color: white;	
+	font-size: 15px;
+	color: gray;
+	margin-left: 10px;
+	
+}
+
+.table .item{
+	background-color: red;
+	color: white;
+}
+
+.table .number{
+	margin-left: 680px;
+	background-color: black;
+	color: white;
+}
+
+
+
+
+div .place{
+	background-color: white;
+	width: 250px;
+	height: 400px;
+	float:left;
+}
+
+.span span{
+	padding: 10px;
+}
+button{
+	background-color: black;
+	color: white;
+	padding: 10px;
+	border: 1;
+}
+
+.place{
+	padding: 8px;
+	border: 5px;
+}
+
+.khung{
+	background-color: black;
+}
+
+
+.contact{
+	width: 60%;
+	height: 370px;
+	background-color: white;
+	margin-left: 220px;
+	margin-top: 100px;
+	
+	
+}
+
+.contact p{
+	text-align: center;
+	
+}
+
+.icon-contact{
+	padding: 5px;
+	
+	
+}
+
+.input{
+	float: right;
+	font-size: 30px;
+}
+
+.w3-right{
+	float: right!important;
+	
+}
+
+.w3-input{
+	padding: 8px;
+	display:block;
+	width: 100%;
+	
+}
+
+.contact form{
+	float: right;
+	margin-top: -110px;
+}
+
+
+.w3-half{
+	float: right;
+	padding: 20px;
+}
+
+.footer{
+	height: 150px;
+	text-align: center;
+}
+
+.footer{
+	padding-top: 50px;
+	
+}
+.footer i{
+	float: right;
+	text-align: center;
+	display: inline-block;
+}
+
+.footer a{
+	color: grey;
+	text-align: center;
+}
+
+.footer p{
+	color: grey;
+	text-align: center;
+}
+
+/* Slide show automatic */
+
+.footer a:hover{
+	background-color: #1102;
+}
+
